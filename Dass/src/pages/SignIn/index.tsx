@@ -1,14 +1,14 @@
 import React from 'react';
-import { Image } from 'react-native';
+import {} from 'react-native';
 
-import { Container } from './styles';
+import { Container, ImageBackground } from './styles';
 
 import BackgroundImg from '../../assets/images/image2.png';
 
 const SignIn: React.FC = () => {
   return (
     <Container>
-      <Image source={BackgroundImg} />
+      <ImageBackground source={BackgroundImg} />
     </Container>
   );
 };
