@@ -1,14 +1,25 @@
 import React from 'react';
-import {} from 'react-native';
+import { ImageBackground } from 'react-native';
 
-import { Container, ImageBackground } from './styles';
+import imgbackground from '../../assets/images/image2.png';
 
-import BackgroundImg from '../../assets/images/image2.png';
+import { Container, BgFundo } from './styles';
+
+import CardLogin from '../../components/CardLogin';
 
 const SignIn: React.FC = () => {
   return (
     <Container>
-      <ImageBackground source={BackgroundImg} />
+      <ImageBackground
+        source={imgbackground}
+        style={{
+          height: '100%',
+          width: '100%',
+        }}>
+        <BgFundo>
+          <CardLogin />
+        </BgFundo>
+      </ImageBackground>
     </Container>
   );
 };
