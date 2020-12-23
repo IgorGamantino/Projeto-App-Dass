@@ -1,15 +1,21 @@
 import { useLinkProps } from '@react-navigation/native';
 import React from 'react';
 
+interface propsChildren {
+  children: string;
+}
+
 import { Card, LabelCard, LabelText } from './styles';
 
-const CardLogin: React.FC = () => (
+const CardLogin: React.FC = ({children}) => {
+return(
   <>
-    <LabelCard>
-      <LabelText>TF DASS</LabelText>
+    <LabelCard >
+      <LabelText>fs login</LabelText>
+
     </LabelCard>
-    <Card></Card>
+    <Card>{children}</Card>
   </>
-);
+)};
 
 export default CardLogin;

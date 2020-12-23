@@ -1,13 +1,20 @@
 import React from 'react';
-import { ImageBackground } from 'react-native';
+import { ImageBackground, Text } from 'react-native';
+import { useNavigation } from '@react-navigation/native'
 
-import imgbackground from '../../assets/images/image2.png';
+import Button from '../../components/Button';
+
+import imgbackground from '../../assets/images/image.png';
 
 import { Container, BgFundo } from './styles';
 
 import CardLogin from '../../components/CardLogin';
 
 const SignIn: React.FC = () => {
+
+ const navigate =  useNavigation();
+
+
   return (
     <Container>
       <ImageBackground
@@ -17,8 +24,15 @@ const SignIn: React.FC = () => {
           width: '100%',
         }}>
         <BgFundo>
-          <CardLogin />
+
+          <CardLogin>
+            <Button  onPress={()=> navigate.navigate('ForgotPassword') }
+            style={{backgroundColor: '#4CAF50'}} >entrar</Button>
+
+          </CardLogin >
+
         </BgFundo>
+
       </ImageBackground>
     </Container>
   );
