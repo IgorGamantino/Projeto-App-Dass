@@ -11,7 +11,7 @@ const CardLogin: React.FC = ({children}) => {
 return(
   <>
     <LabelCard >
-      <LabelText>fs login</LabelText>
+      <LabelText>TS DASS</LabelText>
 
     </LabelCard>
     <Card>{children}</Card>

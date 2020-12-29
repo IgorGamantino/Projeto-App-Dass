@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageBackground, Text } from 'react-native';
+import { ImageBackground, Text,View } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 
 import Button from '../../components/Button';
@@ -26,6 +26,16 @@ const SignIn: React.FC = () => {
         <BgFundo>
 
           <CardLogin>
+            <View>
+              <Text style={{marginTop:32}} >
+                Usuario
+              </Text>
+              <Text style={{marginTop:7}}>_________________________________________</Text>
+              <Text style={{marginTop:24}}>Senha</Text>
+              <Text style={{marginTop:7,marginBottom:32}} >_________________________________________</Text>
+
+            </View>
+
             <Button  onPress={()=> navigate.navigate('ForgotPassword') }
             style={{backgroundColor: '#4CAF50'}} >entrar</Button>
 

@@ -8,7 +8,7 @@ interface ColorButton {
 
 export const Container = styled(RectButton)`
   width: 100%;
-  height: 40px;
+  height: 50px;
   flex-direction: column;
   margin-top: 10px;
   border-radius: 15px;
